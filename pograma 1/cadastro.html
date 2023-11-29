@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro</title>
+    </head>
+    <body>
+    <script src="script.js"></script>
+        
+
+    
+    <button id="inicio">Inicio</button>
+    <button id="sobre">Sobre</button>
+    <div class="content">
+        <h1 id="titulo1">CADASTRO</h1>
+        <form action="submit.html" id="formId">
+            <br>
+            <label class="subtext">Nome:</label>
+            <input type="text" name="name" placeholder="Nome">
+            <br><br>
+            <label class="subtext">CPF:</label>
+            <input type="text" name="cpf" placeholder="xxx.xxx.xxx-xx">
+            <br><br>
+            <label class="subtext">Data de Nascimento:</label>
+            <input type="date" name="dtNasc">
+            <br><br>
+            <label class="subtext">Email:</label>
+            <input type="email" name="email" placeholder="Email">
+            <br><br>
+            <label class="subtext">Telefone:</label>
+            <input type="text" name="telefone" id="telefone" placeholder="(xx)xxxxx-xxxx">
+            <br><br>
+            
+            <label class="subtext">Curso:</label>
+            <select name="curso" id="mainSelect" class="select">
+                <option value="0">Selecione um curso:</option>
+                <option value="DS">Desenvolvimento de Sistemas</option>
+                <option value="RH">Recursos Humanos</option>
+                <option value="ADM">Adiministração</option>
+                <option value="ENF">Enfermagem</option>
+            </select>
+            <br>
+            <div id="opcoesDiscDS">
+                <p>Escolha as suas disciplinas:</p>
+                <input type="checkbox" id="IntProg" name="IntProg"> <label>Python</label>
+                <br>
+                <input type="checkbox" id="LogProg" name="LogProg"> <label>C</label>
+                <br>
+                <input type="checkbox" id="ProgWeb" name="ProgWeb"> <label>C#</label>
+                <br>
+                <input type="checkbox" id="FrontEnd" name="FrontEnd"> <label>C++</label>
+                <br>
+                <input type="checkbox" id="BackEnd" name="BackEnd"> <label>PHP</label>
+                <br>
+                <input type="checkbox" id="DevMobile" name="DevMobile"> <label>Java</label>
+                <br>
+                <input type="checkbox" id="BD" name="BD"> <label>JavaScript</label>               
+            </div>
+
+            <div id="opcoesDiscENF">
+                <p>Escolha as suas disciplinas:</p>
+                <input type="checkbox" id="CheckLing" name="BatimentoCardio"> <label>Anatomia e Fisiologia</label>
+                <br>
+                <input type="checkbox" id="CheckLing" name="ModaRopaBranca"> <label>Micro-biologia</label>
+                <br>
+                <input type="checkbox" id="CheckLing" name="Desprezo"> <label>Farmacologia</label>
+                <br>
+                <input type="checkbox" id="CheckLing" name="MedicinaPraQuemNãoTirou800NoENEM"> <label>Psiquiatria</label>
+                <br>
+                <input type="checkbox" id="CheckLing" name="LimparBundaDeVelho"> <label>BioÉtica</label>
+                <br>
+                <input type="checkbox" id="CheckLing" name="Vacina"> <label>Bioquímica</label>
+                <br>
+                <input type="checkbox" id="CheckLing" name="LavarMao"> <label>Biofísica</label>               
+            </div>
+
+            <div id="opcoesDiscADM">
+                <p>Escolha as suas disciplinas:</p>
+                <input type="checkbox" id="CheckLing" name="INSS"> <label>Conceitos Administracionais</label>
+                <br>
+                <input type="checkbox" id="CheckLing" name="URSS"> <label>Contabilidade</label>
+                <br>
+                <input type="checkbox" id="CheckLing" name="Maconha"> <label>Economia</label>
+                <br>
+                <input type="checkbox" id="CheckLing" name="CNPJ"> <label>Marketing</label>
+                <br>    
+                <input type="checkbox" id="CheckLing" name="CNH"> <label>Gestão Estratégica</label>
+                <br>
+                <input type="checkbox" id="CheckLing" name="Desemprego"> <label>Finanças Empresáriais</label>
+                <br>
+                <input type="checkbox" id="CheckLing" name="Uber"> <label>Qualidade de Processos</label>
+                
+            </div>
+
+            <div id="opcoesDiscRH">
+                <p>Escolha as suas disciplinas:</p>
+                <input type="checkbox" id="CheckLing" name="ComoHumilhas"> <label>Gestão de Pessoas</label>
+                <br>
+                <input type="checkbox" id="CheckLing" name="RecursosDesumanos"> <label>Legislação Trabalhista</label>
+                <br>
+                <input type="checkbox" id="CheckLing" name="Top10FormazDeJogarUmCurriculoFora"> <label>Psicologia Organizacional</label>
+                <br>
+                <input type="checkbox" id="CheckLing" name="DesprezosHumanos"> <label>Adiministração Geral</label>
+                <br>
+                <input type="checkbox" id="CheckLing" name="Top10PerguntasMAISDIFICEISdomundo"> <label>Treinamento e Desenvolvimento</label>
+                <br>
+                <input type="checkbox" id="CheckLing" name="InsultosHumanos"> <label>Relações Trabalhistas</label>
+                <br>
+                <input type="checkbox" id="CheckLing" name="Top10FormasDeMandarAlguemEmbora"> <label>Responsabilidade Social</label>  
+            </div>
+
+            <br>
+            <label class="subtext">Turno:</label>
+            <select name="Turno" id="turno" class="select">
+                <option value="manhã">Manhã</option>
+                <option value="tarde">Tarde</option>
+                <option value="noite">Noite</option>
+            </select>
+
+            <br><br>
+            <button type="submit" id="butao">Enviar</button>
+            <button type="reset" id="butao">Limpar</button>
+        </form>
+    </div>
+</body>
+</html>
